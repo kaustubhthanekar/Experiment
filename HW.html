@@ -1,0 +1,73 @@
+<!Doctype HTML>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="HW.css" media="screen" />
+</head>
+
+<body>
+<div class="topnav" id="topnav">
+
+<ul>
+  <li><a href="#home"class="active">BuildMyPC</a></li>
+  <li><a href="#news">News</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Dropdown</a>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+	<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+	</li>
+</ul>
+<!--
+<a href="#Home" class="active">Home</a>
+<a href="#Buy">Buy PC merch</a>
+<a href="javascript:void(0)" class ="dropdown" >View Items</a>	
+<div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+-->
+
+</div>
+
+<div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
+  <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
+  <a href="#" class="w3-bar-item w3-button">Link 1</a>
+  <a href="https://twitter.com" class="w3-bar-item w3-button">Link 2</a>
+  <a href="#" class="w3-bar-item w3-button">Link 3</a>
+</div>
+
+<div class="image" id="img">
+<img align="center" width="50%vw" src="kauimg.jpg">
+
+		<div class="aboutstyle" id="intro-about">
+			<font style="font-size : 3vw;"><b><center>About Us</center></b></font>
+			<h5 style="font-size : 1.5vw;">Aiming to provide the best user-oriented experience in the PC Assembly and building process, BuildMyPC is one of the few PC construction 
+			and modification websites on the internet. It is powered by a team of computer hardware experts and technical analysts, 
+			which offers appropriate, affordable and the best options that can assist you to upgrade your PC from a mediocre machine to relatively supercomputer that your 
+			money can buy. BuildMyPc operates and functions  considering the present hardware technologies and market trends to find the most 
+			appropriate hardware options at a reasonable price.</h5>
+			<a href="#" class="fa fa-facebook"></a>
+			<a href="#" class="fa fa-twitter"></a>
+			<a href="#" class="fa fa-instagram"></a>
+		</div>
+</div>
+
+<script>
+function myFunction() {
+    var x = document.getElementById("topnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+
+</body>
+</html>
