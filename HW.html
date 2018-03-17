@@ -7,32 +7,24 @@
 </head>
 
 <body>
-<div class="topnav" id="topnav">
 
-<ul>
-  <li><a href="#home"class="active">BuildMyPC</a></li>
-  <li><a href="#news">News</a></li>
-  <li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">Dropdown</a>
+<div class="topnav" id="myTopnav">
+  <a href="#home" class="active">BuildMyPC</a>
+  <a href="#news">Custom make it!</a>
+  <a href="#contact">Recommended Designs</a>
+
+  <div class="dropdown">
+    <button class="dropbtn">Completed Builds
+      <i class="fa fa-caret-down"></i>
+    </button>
     <div class="dropdown-content">
       <a href="#">Link 1</a>
       <a href="#">Link 2</a>
       <a href="#">Link 3</a>
     </div>
-	<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-	</li>
-</ul>
-<!--
-<a href="#Home" class="active">Home</a>
-<a href="#Buy">Buy PC merch</a>
-<a href="javascript:void(0)" class ="dropdown" >View Items</a>	
-<div class="dropdown-content">
-      <a href="#">Link 1</a>
-      <a href="#">Link 2</a>
-      <a href="#">Link 3</a>
-    </div>
--->
-
+  </div> 
+  
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
 </div>
 
 <div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
@@ -47,10 +39,10 @@
 
 		<div class="aboutstyle" id="intro-about">
 			<font style="font-size : 3vw;"><b><center>About Us</center></b></font>
-			<h5 style="font-size : 1.5vw;">Aiming to provide the best user-oriented experience in the PC Assembly and building process, BuildMyPC is one of the few PC construction 
+			<h5 style="font-size : 1.5vw;">Aiming to provide the best user-oriented experience in the PC Assembly and building process, BuildMyPC is one of the few PC customization 
 			and modification websites on the internet. It is powered by a team of computer hardware experts and technical analysts, 
-			which offers appropriate, affordable and the best options that can assist you to upgrade your PC from a mediocre machine to relatively supercomputer that your 
-			money can buy. BuildMyPc operates and functions  considering the present hardware technologies and market trends to find the most 
+			who offer appropriate, affordable and the best options that can assist you to upgrade your PC from a mediocre machine to relative supercomputer that your 
+			money can buy. BuildMyPc operates and functions considering the present hardware technologies and market trends to find the most 
 			appropriate hardware options at a reasonable price.</h5>
 			<a href="#" class="fa fa-facebook"></a>
 			<a href="#" class="fa fa-twitter"></a>
@@ -60,7 +52,7 @@
 
 <script>
 function myFunction() {
-    var x = document.getElementById("topnav");
+    var x = document.getElementById("myTopnav");
     if (x.className === "topnav") {
         x.className += " responsive";
     } else {
