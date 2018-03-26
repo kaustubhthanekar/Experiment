@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+.container {
+  position: relative;
+  width: 40%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-image: url("download.jpg");
+  z-index : -1;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+ -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<h2>Fade in Overlay</h2>
+<p>Hover over the image to see the effect.</p>
+
+<div class="container">
+  <img src="Computer-Tech-Wallpaper-30-2560x1600.jpg" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text">Hello World</div>
+  </div>
+</div>
+
+ <div id="mydiv" style="width:200px;background:white" onmouseover="this.style.background='gray';" onmouseout="this.style.background='white';">
+    Jack and Jill went up the hill 
+    To fetch a pail of water. 
+    Jack fell down and broke his crown, 
+    And Jill came tumbling after. 
+    </div>
+	
+	
+<div class="w3-container">
+  <h2>Animated Slides</h2>
+  <p>Slide or fade in an element from the top, bottom, left or right of the screen with the w3-animate-* classes.</p>
+</div>
+</body>
+</html>
+

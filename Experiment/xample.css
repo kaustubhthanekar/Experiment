@@ -1,0 +1,13 @@
+.img-social{
+	display:inline-block;height:20px;width:20px;
+	}
+.fb{
+	background:url("images/fb.png");
+	}
+.fb:hover{background:url("images/fb-active.png");}
+.tw{background:url("images/twitter.png");}
+.tw:hover{background:url("images/twitter-active.png");}
+.ln{background:url("images/linkedin.png");}
+.ln:hover{background:url("images/linkedin-active.png");}
+.wp{background:url("images/wordpress.png");}
+.wp:hover{background:url("images/wordpress-active.png");}

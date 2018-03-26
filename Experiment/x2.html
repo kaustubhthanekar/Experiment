@@ -1,0 +1,111 @@
+<!Doctype HTML>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<div class="main-background">
+    <div class="demo-holder">
+        <img class="img-size" src="download.jpg">
+        <div class="circle-div">Transparent<br />Effect</div>
+    </div>
+</div>
+
+</body>
+</html>
+<style>
+
+.main-background, .circle-div {
+    background-image:url(http://i.imgur.com/1aAo20a.jpg);
+    background-repeat:no-repeat;
+    background-position:center top;
+    background-attachment:fixed;
+    background-size:cover;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+}
+
+body {
+	margin:0;
+	font-family:Arial,Helvetica,sans-serif;
+	background-size: auto;
+	
+}
+
+#intro-about{
+	margin-top: 1%;
+	margin-left: 50%;
+	padding: -100%;
+	position: relative;
+	bottom: 1%;
+	right:25%;
+}
+#intro-about:hover .overlay{
+opacity : 1;
+}
+
+/* Center Image*/
+img
+	{
+	border: 2px solid black;
+	position:relative;
+	 top: 1%;
+	 left:25%;
+	 opacity:1;
+	 z-index:-1;
+	 color:white;	
+	 margin:3px 3px 3px 3px;
+	}	
+
+/*hover*/	
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  margin:3px 3px 3px 3px;
+}
+
+.image:hover .overlay {
+  opacity: 1;
+}
+
+/* Links*/
+.fa {
+	  padding: 15px;
+	  font-size: 1%px;
+	  width: 1%vw;
+	  text-align: center;
+	  text-decoration: none;
+	  margin: 1%vw 2%vw;
+	  border-radius: 50%;
+	}
+					
+	.fa:hover
+	{
+    opacity: 0.8;
+	}
+
+	.fa-facebook 
+	{
+	background: #3B5998;
+	color: white;
+	}
+	.fa-twitter 
+	{
+	background: #55ACEE;
+	color: white;
+	}
+	.fa-instagram {
+	background: #125688;
+	color: white;
+	}
+
+</style>
