@@ -9,13 +9,15 @@ body {
 #intro-about{
 	top: 1%;
 	/*margin-left: 50%;*/
+	font-size : 3vw; 
+	font-family :Times;
 	position: relative;
 }
 
 #img{
     width: 50%vw;
     height: 50%vw;
-    background-color: red;
+    background: linear-gradient( black , blue);
     position: relative;
     -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
     -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
@@ -25,12 +27,12 @@ body {
     animation-delay: 2s;
 }
 
-/* Center Image*/
+/* Center Image
 #img:hover{
-	transform: rotateZ(360deg); /* Standard syntax */
+	transform: rotateZ(360deg); /* Standard syntax 
       transition:width 3s;
       transition: width 2s, height 2s, transform 2s;
-}
+}*/
 
 @keyframes example {
     0%   {background-color:black; left:0px; top:0px;}
@@ -71,12 +73,10 @@ body {
 					
 	.fa:hover .overlay
 	{
-    opacity: 0.8;
 	padding: 10px;
 	width: 3%vw;
 	}
 	.fa:hover {
-		
 		transition: .5s ease;
 		transform: scale(1.5);
 	}
@@ -99,7 +99,7 @@ body {
 /* Nav Bar */	
 .topnav {
   overflow: hidden;
-  background-color: #333;
+  background-color : black;
   padding-bottom : 0px;
   transition: width 3s;
   transition-timing-function: linear;
@@ -108,7 +108,7 @@ body {
 .topnav a {
   float: left;
   display: block;
-  color: #f2f2f2;
+  color: #ffffff;
   text-align: center;
   padding: 13px 15px;
   text-decoration: none;
@@ -118,7 +118,7 @@ body {
 }
 
 .active {
-  background-color: #4CAF50;
+  background-color: #0000ff;
   color: white;
 }
 
@@ -136,7 +136,7 @@ body {
     border: none;
     outline: none;
     color: white;
-    padding-top : 0px;
+    padding-top : 2px;
     background-color: inherit;
     font-family: inherit;
     margin: 0;
@@ -206,5 +206,37 @@ body {
   }
 }
 
+.container {
+  position: relative;
+  left: 30px;
+  top:600px;
+  width : 1600px;
+  height: 600px;
+  font-size : 30px; 
+  border: 1px solid #ccc;
+}
 
+.round label {
+  background-color:blue;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 200px;
+  font-family :Times;
+  text-align : center;
+  line-height: 07;
+  position: absolute;
+  width: 300px;
+}
+
+/*left: 20%;
+bottom: 60%;*/
+.round input[type="checkbox"] {
+  visibility: hidden;
+}
+
+.round input[type="checkbox"]:checked + label {
+  background-color :white;
+  border-color: #66bb6a;
+}
  </style>
